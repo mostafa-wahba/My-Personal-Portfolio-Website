@@ -94,3 +94,6 @@ $(document).ready(async function () {
   opensans.create("I'm Mostafa Wahba", "#myName");
   instance.setFont();
 });
+$(".love-btn").click(function(){
+  $(".thanks").fadeIn('fast').delay(1000).fadeOut('fast');
+})

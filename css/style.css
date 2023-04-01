@@ -31,7 +31,8 @@
   scroll-behavior: smooth;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-Y: hidden;
   
 }
 a {
@@ -60,6 +61,7 @@ ul {
   color: #ffbd3a !important;
   border-color: #ffbd3a;
 }
+.modal {overflow-y: visible !important}
 .custom-title1,.custom-title2{
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -649,7 +651,9 @@ section .button button:hover {
   transform: scale(1) translateZ(0);
   border-radius: 30px;
   transition: all 0.4s ease;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05)
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25), 0 2px 2px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.15), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  
 }
 
 .card__background {
@@ -709,6 +713,7 @@ section .button button:hover {
   /* filter: grayscale(0.8); */
   transition: background-color 700ms cubic-bezier(0.19, 1, 0.22, 1),bottom 700ms cubic-bezier(0.19, 1, 0.22, 1),opacity 700ms cubic-bezier(0.19, 1, 0.22, 1);
   /* background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.008) 11.7%, rgba(0, 0, 0, 0.035) 22.1%, rgba(0, 0, 0, 0.07) 31.2%, rgba(0, 0, 0, 0.12) 39.4%, rgba(0, 0, 0, 0.18) 46.6%, rgba(0, 0, 0, 0.247) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.392) 64.3%, rgba(0, 0, 0, 0.467) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.608) 78.8%, rgba(0, 0, 0, 0.667) 83.6%, rgba(0, 0, 0, 0.72) 88.7%, rgba(0, 0, 0, 0.76) 94.1%, rgba(0, 0, 0, 0.79) 100%); */
+  overflow: hidden;
 }
 
 .card-content>*+* {
@@ -746,6 +751,26 @@ section .button button:hover {
 .card-btns button:hover{
   color: #ffbd3a;
 }
+.thanks{
+  color: #ffbd3a !important;
+  top: -20px;
+  padding: 0 5px;
+  background-color: white;
+  border-radius: 5px;
+  display: none;
+}
+.thanks::after{
+  content: "";
+  display: block;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(45deg);
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  bottom: -10px;
+  background-color: white;
+}
+
 @media screen and (min-width:768px) and (max-width:1199px) {
   .card-content{
     padding: 0;
@@ -839,7 +864,7 @@ section .button button:hover {
   resize: none;
   margin-bottom: 0.4rem;
   border: 2px solid var(--bs-border-color);
-  padding: 0rem 0rem !important;
+  padding: 0rem 1rem !important;
   position: relative;
 }
 input{
