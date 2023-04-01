@@ -25,14 +25,14 @@ menuBtn.onclick = function () {
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
   menuBtn.style.pointerEvents = "none";
-  body.style.overflow = "hidden";
+  body.style.overflowY = "hidden";
   scrollBtn.style.pointerEvents = "none";
 };
 cancelBtn.onclick = function () {
   navBar.classList.remove("active");
   menuBtn.style.opacity = "1";
   menuBtn.style.pointerEvents = "auto";
-  body.style.overflow = "auto";
+  body.style.overflowY = "auto";
   scrollBtn.style.pointerEvents = "auto";
 };
 
@@ -69,25 +69,28 @@ $(".skill").click(function () {
   $(this).toggleClass("rotating");
 });
 // -------------------------------- Effects
-$(document).ready(async function(){
-  $("#loading-screen").fadeOut(1000,function() {
-    $("body").css("overflowY","auto")
-  })
-  const opensans = new SVGTextAnimate("https://cdn.jsdelivr.net/gh/oubenruing/svg-text-animate@latest/docs/fonts/OpenSans-Regular-webfont.woff", {
-    "duration": 300,
-    "direction": "normal",
-    "fill-mode": "forwards",
-    "delay": 150,
-    "mode": "delay"
-  }, {
-    "stroke": "#302f2d",
-    "stroke-width": "2px",
-    "font-size": 55,
-    "font-family": "Abel, sans-serif"
+$(document).ready(async function () {
+  $("#loading-screen").fadeOut(1000, function () {
+    $("body").css("overflowY", "auto");
   });
+  const opensans = new SVGTextAnimate(
+    "https://cdn.jsdelivr.net/gh/oubenruing/svg-text-animate@latest/docs/fonts/OpenSans-Regular-webfont.woff",
+    {
+      duration: 300,
+      direction: "normal",
+      "fill-mode": "forwards",
+      delay: 150,
+      mode: "delay",
+    },
+    {
+      stroke: "#302f2d",
+      "stroke-width": "2px",
+      "font-size": 55,
+      "font-family": "Abel, sans-serif",
+    }
+  );
 
   await opensans.setFont();
   opensans.create("I'm Mostafa Wahba", "#myName");
   instance.setFont();
-})
-
+});
