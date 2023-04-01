@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <title> Mostafa Wahba </title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <!-- Fontawesome CDN Link -->
@@ -18,6 +19,15 @@
 </head>
 
 <body>
+  <div id="loading-screen" class="loading-screen">
+    <div class="loading-container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
   <!-- Move to up button -->
   <div class="scroll-button">
     <a href="#home"><i class="fas fa-arrow-up"></i></a>
@@ -37,9 +47,10 @@
         </div>
       </ul>
       <div class="media-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/oofa40" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/mostafa-wahba-b74741188/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.github.com/mostafa-wahba" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
     <div class="menu-btn">
@@ -51,13 +62,14 @@
   <section class="home" id="home">
     <div class="home-content">
       <div class="text">
-        <div class="text-one">Hello,</div>
-        <div class="text-two">I'm Mostafa Wahba</div>
-        <div class="text-three">Front-End Developer</div>
+        <div class="text-one wow fadeInUp">Hello,</div>
+        <div id="myName" class="text-two"></div>
+        <div class="text-three wow fadeInUp" data-wow-delay="1s">Front-End Developer</div>
       </div>
       <div class="button">
-        <button class="me-3">Hire Me</button>
-        <button class="contact-btn"><a class="bg-primary text-white bg-transparent" href="#contact">Contact
+        <button class="me-3 wow fadeInLeft" data-wow-delay="1.5s">Hire Me</button>
+        <button class="contact-btn wow fadeInRight" data-wow-delay="1.5s"><a
+            class="bg-primary text-white bg-transparent" href="#contact">Contact
             Me</a></button>
       </div>
     </div>
@@ -67,16 +79,16 @@
   <section class="about" id="about">
     <div class="container">
       <div class="content">
-        <h1 class="display-5 fw-bolder mb-5 custom-title1">Know Me More</h1>
+        <h1 class="display-5 fw-bolder mb-5 custom-title1" data-aos="fade-down">Know Me More</h1>
         <div class="about-details">
-          <div class="left">
+          <div class="left" data-aos-duration="2000" data-aos="fade-right">
             <div class="img-container">
               <div class="img-border1"></div>
               <img src="Images/WhatsApp Image 2023-03-03 at 3.36.54 PM (1).jpeg" alt="">
               <div class="img-border2"></div>
             </div>
           </div>
-          <div class="right ps-5">
+          <div class="right ps-5" data-aos-duration="2000" data-aos="fade-left">
             <div class="topic">Design Programming Is My Passion</div>
             <p> Hi, My name is Mostafa Amgad Wahba. I am a front-end developer. graduated from the faculty of computer
               science at elshorouk academy, In addition to taking a course in frontend
@@ -96,10 +108,11 @@
   <!-- Section Tag and Other Div will same where we need to put same CSS -->
   <section class="skills" id="skills">
     <div class="container">
-      <div class="title title1"><span>MY SKILLS</span></div>
+      <div class="title title1" data-aos="zoom-in" data-aos-duration="1500"><span>MY SKILLS</span></div>
       <div class="row g-0 gy-md-3 px-5 justify-content-center pt-5">
         <div class="col-xl-2 col-md-4 col-6 mb-3 mb-md-0">
-          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative">
+          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative"
+            data-aos="fade-left" data-aos-duration="1500" aos-delay="0">
             <div id="skill" class="skill d-flex justify-content-center align-items-center p-2 bg-white rounded">
               <div class="front-side">
                 <i class="fab fa-css3"></i>
@@ -119,7 +132,8 @@
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mb-3 mb-md-0">
-          <div class="row skill2 gy-3 flex-column align-content-center justify-content-center position-relative">
+          <div class="row skill2 gy-3 flex-column align-content-center justify-content-center position-relative"
+            data-aos="fade-left" data-aos-duration="1500" aos-delay="200">
             <div id="skill" class="skill d-flex justify-content-center align-items-center p-2 bg-white rounded">
               <div class="front-side">
                 <span><img class="rounded-3 w-100" src="Images/sass.png" alt=""></span></li>
@@ -139,7 +153,8 @@
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mb-3 mb-md-0">
-          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative">
+          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative"
+            data-aos="fade-left" data-aos-duration="1500" aos-delay="400">
             <div id="skill" class="skill d-flex justify-content-center align-items-center p-2 bg-white rounded">
               <div class="front-side">
                 <i class="fab fa-react"></i>
@@ -159,7 +174,8 @@
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mb-3 mb-md-0">
-          <div class="row skill2 gy-3 flex-column align-content-center justify-content-center position-relative">
+          <div class="row skill2 gy-3 flex-column align-content-center justify-content-center position-relative"
+            data-aos="fade-left" data-aos-duration="1500" aos-delay="600">
             <div id="skill" class="skill d-flex justify-content-center align-items-center p-2 bg-white rounded">
               <div class="front-side">
                 <span><img src="Images/pngegg (5).png" alt=""></span>
@@ -179,7 +195,8 @@
           </div>
         </div>
         <div class="col-xl-2 col-md-4 col-6 mb-3 mb-md-0">
-          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative">
+          <div class="row skill1 gy-3 flex-column align-content-center justify-content-center position-relative"
+            data-aos="fade-left" data-aos-duration="1500" aos-delay="800">
             <div id="skill" class="skill d-flex justify-content-center align-items-center p-2 bg-white rounded">
               <div class="front-side">
                 <span><img src="Images/pngegg.png" alt=""></span></li>
@@ -205,10 +222,10 @@
 
   <section class="portfolio hero-section position-relative" id="works">
     <div class="container position-relative">
-      <div class="title title2"><span>MY WORK</span></div>
+      <div class="title title2" data-aos="zoom-in" data-aos-duration="1500"><span>MY WORK</span></div>
       <div class="row">
         <div class="col-12">
-          <ul id="portfolio-filter">
+          <ul id="portfolio-filter" data-aos="zoom-in" data-aos-duration="1500">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-1">Web Design</li>
             <li data-filter=".filter-2">Wep Apps</li>
@@ -216,8 +233,10 @@
           </ul>
         </div>
       </div>
-      <div class="row gy-5 portfolio-container justify-content-center align-items-center position-relative">
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+      <div
+        class="row gy-5 portfolio-container justify-content-center align-items-center position-relative wow slideInUp"
+        data-wow-duration="2s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Fokir/" target="_blank" rel="Fokir Website">
               <div class="card__background proj1">
@@ -225,7 +244,7 @@
             </a>
             <div class="card-content">
               <h2 class="card-title">Fokir Template</h2>
-              <p class="card-copy">Fokir template is a portfolio website made using HTML, CSS, Bootstrap, and JS</p>
+              <p class="card-copy">Fokir template is a portfolio website made by using HTML, CSS, Bootstrap, and JS</p>
               <div class="card-btns d-flex">
                 <a class=" bg-transparent" href="https://mostafa-wahba.github.io/Fokir/" target="_blank"
                   rel="Fokir Website">
@@ -237,7 +256,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Crud-System/" target="_blank"
               rel="Crud System">
@@ -258,7 +277,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Devfolio-Template/" target="_blank"
               rel="Crud System">
@@ -267,7 +286,7 @@
             </a>
             <div class="card-content">
               <h2 class="card-title">Morgan Template</h2>
-              <p class="card-copy">Morgan template is a portfolio website made using HTML, CSS, Bootstrap, and JS</p>
+              <p class="card-copy">Morgan template is a portfolio website made by using HTML, CSS, Bootstrap, and JS</p>
               <div class="card-btns d-flex">
                 <a class=" bg-transparent" href="https://mostafa-wahba.github.io/Devfolio-Template/" target="_blank"
                   rel="Morgan Template">
@@ -279,7 +298,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Bookmark-System/" target="_blank"
               rel="Game Reviews Website">
@@ -300,7 +319,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.8s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Game-Reviews-Website/" target="_blank"
               rel="Game Reviews Website">
@@ -322,7 +341,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Weather-System/" target="_blank"
               rel="Weather App">
@@ -344,7 +363,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.2s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Simone-Template/" target="_blank"
               rel="Simone Website">
@@ -353,7 +372,7 @@
             </a>
             <div class="card-content">
               <h2 class="card-title">Simone Template</h2>
-              <p class="card-copy">Simone template is a portfolio website made using HTML, CSS, Bootstrap, and JS</p>
+              <p class="card-copy">Simone template is a portfolio website made by using HTML, CSS, Bootstrap, and JS</p>
               <div class="card-btns d-flex">
                 <a class=" bg-transparent" href="https://mostafa-wahba.github.io/Simone-Template/" target="_blank"
                   rel="Simone Website">
@@ -365,7 +384,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.4s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Kerri-Template/" target="_blank"
               rel="Kerri Website">
@@ -374,7 +393,7 @@
             </a>
             <div class="card-content">
               <h2 class="card-title">Kerri Template</h2>
-              <p class="card-copy">Kerri template is a portfolio website made using HTML, CSS, Bootstrap, and JS</p>
+              <p class="card-copy">Kerri template is a portfolio website made by using HTML, CSS, Bootstrap, and JS</p>
               <div class="card-btns d-flex">
                 <a class=" bg-transparent" href="https://mostafa-wahba.github.io/Kerri-Template/" target="_blank"
                   rel="Kerri Website">
@@ -386,7 +405,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1.6s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Egyption-Party-Template/" target="_blank"
               rel="Egyption Party template">
@@ -407,7 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="1.8s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/Login-System/" target="_blank"
               rel="Login System">
@@ -428,7 +447,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1.8s">
+        <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3">
           <div class="card-border overflow-hidden">
             <a class="w-100 h-100" href="https://mostafa-wahba.github.io/yummy/" target="_blank" rel="Login System">
               <div class="card__background proj11">
@@ -437,7 +456,7 @@
             <div class="card-content">
               <h2 class="card-title">Yummy Website</h2>
               <p class="card-copy">Yummy Website is a recipes website divided according to area, ingredients, categories
-                and made using HTML, CSS, Bootstrap, JS, regex, and real API</p>
+                and made by using HTML, CSS, Bootstrap, JS, regex, and real API</p>
               <div class="card-btns d-flex">
                 <a class=" bg-transparent" href="https://mostafa-wahba.github.io/yummy/" target="_blank"
                   rel="Login System">
@@ -456,18 +475,18 @@
   <!-- Contact Me section Start -->
   <section class="contact" id="contact">
     <div class="container py-5">
-      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+      <div class="row g-5 mb-5 ">
         <div class="col-lg-6">
-          <h1 class="display-5 fw-bolder mb-0 custom-title2">Let's Work Together</h1>
+          <h1 class="display-5 fw-bolder mb-0 custom-title2" data-aos="fade-down">Let's Work Together</h1>
         </div>
       </div>
       <div class="row g-5">
-        <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-5 col-md-6" data-aos="fade-right" data-aos-duration="1500">
           <p class="fw-bold detail-title">Residence:</p>
           <h3 class="detail">Cairo, Egypt</h3>
           <hr class="">
           <p class="fw-bold detail-title">Call me:</p>
-          <h3 class="detail">+0 (111) 570 1173</h3>
+          <h3 class="detail">+20 (111) 570 1173</h3>
           <hr class="">
           <p class="fw-bold detail-title">Mail me:</p>
           <h3 class="detail">mostafawahba22710@gmail.com</h3>
@@ -479,7 +498,7 @@
             <a class="btn btn-square btn-primary border-1 me-2" href=""><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
-        <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="col-lg-7 col-md-6" data-aos="fade-left" data-aos-duration="1500">
           <form>
             <div class="row g-3">
               <div class="col-md-6">
@@ -524,6 +543,9 @@
     </div>
   </footer>
   <script src="jquery-3.6.3.min.js"></script>
+  <script src="lib/svg-text-animation/svg-text-animate.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="script.js"></script>
 </body>

@@ -31,7 +31,8 @@
   scroll-behavior: smooth;
 }
 body{
-  overflow-x: hidden;
+  overflow: hidden;
+  
 }
 a {
   text-decoration: none;
@@ -81,7 +82,61 @@ ul {
     width: 5rem;
     margin-top: 1.25rem;
 }
+/* Loading screen */
+.loading-screen{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #302f2d;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+}
+.loading-container div{
+	background: #ffbd3a;
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	float: left;
+	top: 40px;
+	position: relative;
+	margin-left: 10px;
+}
 
+.loading-container div:nth-child(1),.loading-container div:nth-child(3),.loading-container div:nth-child(5){
+	animation: animateone 1s linear infinite;
+	top: 40px;
+}
+
+.loading-container div:nth-child(2),.loading-container div:nth-child(4){
+	animation: animatetwo 1s linear infinite;
+	top: -40px;
+}
+
+@keyframes animateone{
+	0%{
+		top:40px;
+		transform:scale(1);
+	}
+	50%{
+		top:-40px;
+		transform:scale(0.5);
+	}
+}
+
+@keyframes animatetwo{
+	0%,100%{
+		top:-40px;
+		transform:scale(0.5);
+	}
+	50%{
+		top:40px;
+		transform:scale(1);
+	}
+}
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
   width: 10px;
