@@ -25,7 +25,7 @@ menuBtn.onclick = function () {
   navBar.classList.add("active");
   menuBtn.style.opacity = "0";
   menuBtn.style.pointerEvents = "none";
-  body.style.overflowY = "hidden";
+  body.style.overflow = "hidden";
   scrollBtn.style.pointerEvents = "none";
 };
 cancelBtn.onclick = function () {
@@ -43,7 +43,7 @@ for (var i = 0; i < navLinks.length; i++) {
     navBar.classList.remove("active");
     menuBtn.style.opacity = "1";
     menuBtn.style.pointerEvents = "auto";
-    body.style.overflow = "auto";
+    body.style.overflowY = "auto";
     scrollBtn.style.pointerEvents = "auto";
   });
 }
