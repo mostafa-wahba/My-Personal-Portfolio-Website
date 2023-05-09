@@ -3,6 +3,7 @@ AOS.init();
 // Sticky Navigation Menu JS Code
 let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
+document.getElementById
 let val;
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
