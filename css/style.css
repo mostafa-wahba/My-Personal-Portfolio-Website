@@ -202,10 +202,14 @@ nav .navbar {
   margin: auto;
   padding: 0;
 }
+nav .navbar .logo{
+  display: flex;
+}
 nav .navbar .logo .logo-img{
   width: 2.5rem;
+  height: 3rem;
   position: relative;
-  top: -0.5rem;
+  z-index: -1;
 }
 nav .navbar .logo a {
   font-weight: 500;
