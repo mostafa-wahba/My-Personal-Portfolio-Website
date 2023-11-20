@@ -62,8 +62,22 @@ function portfolio() {
     portfolioIsotope.isotope({ filter: $(this).data("filter") });
   });
 }
-
 portfolio();
+// -------------------------------- load more btn
+// document.addEventListener("DOMContentLoaded", function () {
+//   const loadMoreButton = document.getElementById("loadMoreButton");
+//   const hiddenPortfolioItems = document.querySelectorAll(".portfolio-hidden");
+
+//   loadMoreButton.addEventListener("click", function () {
+//     for (let i = 0; i < hiddenPortfolioItems.length; i++) {
+//       hiddenPortfolioItems[i].classList.remove("portfolio-hidden");
+//     }
+
+//     // Hide the button after displaying all hidden items
+//     loadMoreButton.style.display = "none";
+//   });
+// });
+
 // -------------------------------- Skills Fliping
 $(".skill").click(function () {
   console.log("ok");

@@ -420,6 +420,18 @@ nav.sticky .menu-btn {
 }
 
 /* About Section Styling */
+.about-details .button button:hover {
+  border-color: #ffbd3a;
+  background-color: #fff;
+  color: #ffbd3a;
+}
+
+.about-details .button button:hover a {
+  border-color: #ffbd3a;
+  background-color: #fff;
+  color: #ffbd3a !important;
+}
+
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
@@ -681,8 +693,8 @@ section .button button:hover {
 
 
 
-/* My Services CSS */
-.hero-section {
+/* My Work CSS */
+.works-section {
   align-items: flex-start;
   display: flex;
   min-height: 100%;
@@ -946,7 +958,18 @@ section .button button:hover {
 .proj14 {
   background-image: url(../Images/proj14.png);
 }
-
+#loadMoreButton {
+  outline: none;
+  padding: 7px 30px;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  position: relative;
+}
+.portfolio-hidden {
+  display: none;
+}
 /* Contact Me CSS */
 .contact {
   background: #efefef;
